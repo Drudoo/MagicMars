@@ -1,0 +1,83 @@
+body {
+  color: white;
+  background-color: black;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+p {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 150%;
+  font-weight:400;
+}
+
+.md {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 150%;
+  font-weight:400;
+  margin-left: 10px;
+}
+
+.sol {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 150%;
+  font-weight:600;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 60%;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.verticalLine {
+    border-left: thin solid #ffffff;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 50%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 25%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
