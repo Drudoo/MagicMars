@@ -14,14 +14,17 @@
         var year = Math.floor(time / 86400000);
         var day = Math.ceil((new Date().getTime()) / 86400000);
         var sol = day - year;
-        document.getElementById("SOL").innerHTML = "&nbsp; SOL &nbsp;&nbsp;&nbsp;&nbsp;" + sol;
+        document.getElementById("SOL").innerHTML = "SOL &nbsp;&nbsp;&nbsp;&nbsp;" + sol;
+    }
+
+    function getWeatherCPH() {
+      var url = "http://api.wunderground.com/api/" + apikey + "/history_" + ymd + "/q/" + query + ".json";
     }
     </script>
     <div class="verticalLine">
       <div class="section group">
         <div class="col span_1_of_2">
           <div class="md">MISSION DAY</div>
-
           <div class="sol" id="SOL"></div>
         </div>
         <div class="col span_1_of_2">
